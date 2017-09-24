@@ -1,19 +1,32 @@
-/**
-* This is an example request. Create your own using best practises for
-* handling asynchronous data fetching
+/*
+Using ES6 Fetch Api to return data - refactored so that the same method can be used for both the vehicle list
+and individual vehicle components
 **/
-
-export const getData = (cb) => {
-    const vehicles = new XMLHttpRequest();
-    vehicles.open('GET', 'http://localhost:9988/api/vehicle');
-
-    vehicles.onreadystatechange = function() {
-        if(vehicles.readyState === 4) {
- 		    if(vehicles.status === 200) {
- 			    cb(vehicles.responseText);
-		    }
-		}
-	};
-
-	vehicles.send();
+export const getData = (url) => {
+  const obj = {
+    isError: false,
+    errMsg: '',
+    data: {}
+  };
+  return fetch(url)
+  .then(response => {
+    if (response.ok) {
+      return response;
+    } else {
+      obj.isError = true;
+      obj.errMsg = `${response.status} (${response.statusText})`;
+    }
+  })
+  .then((response) => response.json())
+  .then(response => {
+    if(!obj.isError) obj.data = response;
+    return obj;
+  })
+  .catch(error => {
+    if(!obj.isError) {
+      obj.isError = true;
+      obj.errMsg = `Error in fetch: ${error.message}`;
+    }
+    return obj;
+  });
 };

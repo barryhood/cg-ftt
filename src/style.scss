@@ -1,5 +1,10 @@
-$bg-colour: #ccc;
+@import './styles/settings/variables';
 
-body {
-	background-color: $bg-colour;
-}
+@import './styles/base/mediaqueries';
+@import './styles/base/betterdefaults';
+@import './styles/base/globals';
+
+@import './styles/modules/cars';
+@import './styles/modules/car';
+@import './styles/modules/loader';
+@import './styles/modules/error';

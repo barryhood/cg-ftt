@@ -1,0 +1,10 @@
+.cars {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 120px;
+  @include large {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

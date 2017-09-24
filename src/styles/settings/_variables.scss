@@ -1,0 +1,12 @@
+/* colours */
+$BG_COLOUR: #fff;
+$TEXT_DARK: #4a4f54;
+$TEXT_TITLE_DARK: #0c121c;
+$DIV_BORDER: #eef1f1;
+
+/* Animation/transition */
+$EASE: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+$DURATION: 0.35s;
+$DURATION_SLOW: 0.75s;
+$TRANSITION: $EASE $DURATION;
+$TRANSITION_SLOW: $EASE $DURATION_SLOW;
