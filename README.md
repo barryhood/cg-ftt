@@ -37,4 +37,4 @@ Notes on the thinking behind my implementation:
 
 ## Connect Group - Architecture/Software Design Test - URL Shortener
 
-Please find PDF with answers to this part of the test [https://github.com/barryhood/cg-ftt/blob/master/Connect%20Group%20-%20ArchitectureSoftware%20Design%20Test%20-%20URL%20Shortener.pdf](here).
+Please find PDF with answers to this part of the test [here](https://github.com/barryhood/cg-ftt/blob/master/Connect%20Group%20-%20ArchitectureSoftware%20Design%20Test%20-%20URL%20Shortener.pdf).
