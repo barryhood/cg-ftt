@@ -34,3 +34,7 @@ Notes on the thinking behind my implementation:
 * Since the example was setup in React, I have completed the test in the same framework, creating a Vehicle component to display individual vehicle results as children of the VehicleList. Both components make calls to the getData() method, which has been refactored to handle both use cases and to use the Fetch API and promises instead of XMLHttpRequest and callbacks.
 * Since CSS transition effects weren’t specified in the creatives, I have added some as examples. Generally this would be something I’d discuss with a designer if there was no written specification.
 * Since our getData() method now handles multiple or single vehicle requests in addition to server errors, I have added a test case for each to the test file (/test/api.spec.js).
+
+## Connect Group - Architecture/Software Design Test - URL Shortener
+
+Please find PDF with answers to this part of the test [https://github.com/barryhood/cg-ftt/blob/master/Connect%20Group%20-%20ArchitectureSoftware%20Design%20Test%20-%20URL%20Shortener.pdf](here).
